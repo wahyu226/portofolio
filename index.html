@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Wahyu Agus Riyanto - Calon Programmer Tangguh & Mahasiswa Teknik Informatika UMC dengan keahlian Web Development, IoT (Arduino & ESP32), dan AI.">
+  <title>Wahyu Agus Riyanto | Beranda</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS (Light Theme) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== GLOBAL NAVBAR ==================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-brand-logo">W</div>
+        <span>Wahyu<span style="color: var(--primary-blue);">.dev</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">Tentang Saya</a></li>
+          <li><a href="experience.html" class="nav-link">Pengalaman</a></li>
+          <li><a href="projects.html" class="nav-link">Proyek</a></li>
+          <li><a href="contact.html" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="nav-mobile-menu" id="navMobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">Tentang Saya</a>
+      <a href="experience.html">Pengalaman Kerja</a>
+      <a href="projects.html">Portofolio Proyek</a>
+      <a href="contact.html">Kontak</a>
+      <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top: 0.5rem; text-align: center;">
+        <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badges">
+            <div class="badge-status">
+              <span class="badge-pulse-dot"></span>
+              Terbuka untuk Peluang Kerja & Magang
+            </div>
+            <div class="badge-academic">
+              <i class="fa-solid fa-graduation-cap"></i> Teknik Informatika - UMC (Semester 7)
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            Dari Lapangan ke Baris Kode: Menghadirkan Solusi Web & IoT yang <span class="highlight">Presisi, Tangguh, dan Tepat Sasaran</span>.
+          </h1>
+
+          <p class="hero-subtitle">
+            Halo, saya <strong>Wahyu Agus Riyanto</strong>. Mengombinasikan ketangguhan mental dari pengalaman kerja fisik & retail dengan kecakapan rekayasa web (PHP, Python, JavaScript), mikrokontroler (<strong>Arduino Uno R3</strong> & <strong>ESP32 DevKit</strong>), dan kecerdasan buatan untuk membangun aplikasi yang fungsional, rapi, dan solutif.
+          </p>
+
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">
+              <i class="fa-solid fa-microchip"></i> Lihat Portofolio Proyek
+            </a>
+            <a href="about.html" class="btn btn-secondary">
+              <i class="fa-solid fa-user-check"></i> Mengenal Karakter Saya
+            </a>
+            <a href="https://wa.me/628977712323" target="_blank" class="btn btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+            </a>
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>3+ Thn</h3>
+              <p>Etos Kerja Lapangan</p>
+            </div>
+            <div class="stat-item">
+              <h3>6+</h3>
+              <p>Proyek Web, AI & IoT</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Ketelitian & Disiplin</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Visual Card -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-card">
+              <div class="profile-img-container">
+                <!-- Foto profil dari folder images -->
+                <img src="images/profile.jpg" alt="Foto Wahyu Agus Riyanto" class="profile-img" id="profileImage">
+
+                <!-- Fallback otomatis jika file gambar profil belum diletakkan di images/profile.jpg -->
+                <div class="profile-fallback-box" id="profileFallback" style="display: none;">
+                  <div class="avatar-initials">WAR</div>
+                  <h4 style="font-weight: 800; color: var(--text-heading); margin-bottom: 0.25rem;">Wahyu Agus Riyanto</h4>
+                  <p style="font-size: 0.85rem; color: var(--text-muted);">Mahasiswa Teknik Informatika UMC</p>
+                  <span style="font-size: 0.75rem; color: var(--primary-blue); margin-top: 0.5rem; background: #fff; padding: 0.25rem 0.65rem; border-radius: 4px; border: 1px solid var(--border-light);">
+                    Letakkan foto Anda di: images/profile.jpg
+                  </span>
+                </div>
+              </div>
+
+              <div class="profile-badge-floating">
+                <i class="fa-solid fa-award"></i>
+                <div>
+                  <h4>Grit & Precision</h4>
+                  <p>Ketelitian Detail & Ketahanan Kerja</p>
+                </div>
+              </div>
+
+              <!-- Input & Tombol Ganti / Pasang Foto Langsung -->
+              <input type="file" id="profileUploader" accept="image/*" style="display: none;">
+              <button type="button" class="profile-upload-trigger" id="uploadTrigger" title="Klik untuk memilih foto dari laptop/HP Anda">
+                <i class="fa-solid fa-camera"></i> Pasang / Ganti Foto Profil
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HIGHLIGHT NILAI DIRI ==================== -->
+    <section style="background: #ffffff; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-star"></i> Karakter Utama</div>
+          <h2 class="section-title">Nilai Tambah yang Saya Bawa <span>ke Tim Anda</span></h2>
+          <p class="section-subtitle">Kombinasi pengalaman lapangan dan pemikiran analitis membentuk kebiasaan kerja yang solid.</p>
+        </div>
+
+        <div class="values-stack" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <div class="value-card">
+            <div class="value-icon-box icon-grit">
+              <i class="fa-solid fa-hand-fist"></i>
+            </div>
+            <div class="value-text">
+              <h4>Ketangguhan Mental (High Grit)</h4>
+              <p>Terlatih dari 2 tahun kerja fisik di perkebunan sawit; tidak mudah menyerah saat menghadapi bug rumit maupun tenggat waktu ketat.</p>
+            </div>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon-box icon-precision">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <div class="value-text">
+              <h4>Ketelitian Ekstrem (Zero Defect)</h4>
+              <p>Terbiasa dengan standar ketat fresh food retail; sangat peka terhadap detail data, penanganan error, dan kerapian arsitektur kode.</p>
+            </div>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon-box icon-time">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+            <div class="value-text">
+              <h4>Manajemen Waktu Disiplin</h4>
+              <p>Terbiasa dengan shift kerja ketat dan target harian; selalu memastikan tugas terselesaikan sesuai jadwal tanpa mengorbankan kualitas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="about.html" class="btn btn-secondary">
+            Pelajari Selengkapnya Tentang Saya <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HIGHLIGHT PROYEK UNGGULAN ==================== -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-laptop-code"></i> Portofolio Terpilih</div>
+          <h2 class="section-title">Proyek Unggulan <span>Hardware IoT & Web</span></h2>
+          <p class="section-subtitle">Implementasi perangkat keras mikrokontroler Arduino Uno R3, ESP32 DevKit, dan aplikasi sistem web.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Card 1: ESP32 Kebakaran -->
+          <div class="card project-card">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" 
+                   alt="ESP32 IoT Circuit" 
+                   class="project-img"
+                   onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80';">
+              <div class="project-badge-overlay">
+                <span class="badge-tag tag-iot">IoT & Hardware</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-hardware-badge"><i class="fa-solid fa-microchip"></i> ESP32 DevKit V1 + Blynk IoT</div>
+              <h3 class="project-title">Sistem Deteksi Dini Kebakaran & Kebocoran Gas Otomatis</h3>
+              <p class="meta-text" style="margin-bottom: 1rem;">
+                Sistem peringatan darurat cerdas menggunakan sensor api & gas terhubung WiFi, mengirimkan notifikasi instan langsung ke smartphone via Blynk.
+              </p>
+              <div class="project-impact-box">
+                <div class="meta-label"><i class="fa-solid fa-bolt"></i> Dampak Utama</div>
+                <div class="meta-text">Deteksi bahaya < 2 detik & notifikasi otomatis tanpa batasan jarak.</div>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-chip">ESP32 DevKit</span>
+                <span class="tech-chip">Aplikasi Blynk</span>
+                <span class="tech-chip">MQ-2 Gas</span>
+                <span class="tech-chip">Flame Sensor</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Arduino Jemuran & Gempa -->
+          <div class="card project-card">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1553406830-ef2513450d76?auto=format&fit=crop&w=800&q=80" 
+                   alt="Arduino Uno R3 Project" 
+                   class="project-img"
+                   onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=800&q=80';">
+              <div class="project-badge-overlay">
+                <span class="badge-tag tag-iot">IoT & Otomasi</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-hardware-badge"><i class="fa-solid fa-microchip"></i> Arduino Uno R3 + Sensor</div>
+              <h3 class="project-title">Jemuran Pintar Otomatis & Pendeteksi Dini Gempa Bumi</h3>
+              <p class="meta-text" style="margin-bottom: 1rem;">
+                Otomasi penarikan kanopi jemuran menggunakan motor servo berbasis sensor air hujan/LDR, serta alarm getaran dini gempa bumi.
+              </p>
+              <div class="project-impact-box">
+                <div class="meta-label"><i class="fa-solid fa-bolt"></i> Dampak Utama</div>
+                <div class="meta-text">Mencegah pakaian basah 100% otomatis dan perlindungan dini gempa.</div>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-chip">Arduino Uno R3</span>
+                <span class="tech-chip">Motor Servo</span>
+                <span class="tech-chip">Raindrop Sensor</span>
+                <span class="tech-chip">Vibration SW-420</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Digilib Web -->
+          <div class="card project-card">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" 
+                   alt="Library Web Application" 
+                   class="project-img"
+                   onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80';">
+              <div class="project-badge-overlay">
+                <span class="badge-tag tag-web">Web App</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-hardware-badge" style="background: #eff6ff; color: #1d4ed8;"><i class="fa-solid fa-globe"></i> Web System (PHP & MySQL)</div>
+              <h3 class="project-title">Aplikasi Digitalisasi Perpustakaan (Digilib)</h3>
+              <p class="meta-text" style="margin-bottom: 1rem;">
+                Platform sirkulasi buku digital terintegrasi untuk katalogisasi, pencatatan pinjam/kembali, dan otomasi perhitungan denda keterlambatan.
+              </p>
+              <div class="project-impact-box">
+                <div class="meta-label"><i class="fa-solid fa-bolt"></i> Dampak Utama</div>
+                <div class="meta-text">Mempercepat transaksi sirkulasi buku hingga 60% dan mencegah data hilang.</div>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-chip">PHP</span>
+                <span class="tech-chip">MySQL</span>
+                <span class="tech-chip">JavaScript</span>
+                <span class="tech-chip">HTML5/CSS3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="projects.html" class="btn btn-primary">
+            Lihat Semua 6 Proyek Lengkap dengan Spesifikasi <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CALL TO ACTION ==================== -->
+    <section style="background: linear-gradient(135deg, #eff6ff 0%, #e0f2fe 100%); border-top: 1px solid var(--border-light);">
+      <div class="container" style="text-align: center; max-width: 780px;">
+        <h2 style="font-size: 2.2rem; font-weight: 800; color: var(--text-heading); margin-bottom: 1rem;">
+          Siap Berkolaborasi dan Menghadirkan Dampak Nyata?
+        </h2>
+        <p style="font-size: 1.1rem; color: var(--text-body); margin-bottom: 2rem;">
+          Saya siap berkontribusi pada posisi Magang, Junior Web Developer, IoT Prototyping, maupun proyek perangkat lunak Anda.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fa-solid fa-envelope"></i> Hubungi Saya Sekarang
+          </a>
+          <a href="https://wa.me/628977712323" target="_blank" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Chat Langsung via WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h4>Wahyu Agus Riyanto</h4>
+        <p>Mahasiswa Teknik Informatika UMC | Web Developer & IoT Hardware Enthusiast</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang</a>
+        <a href="experience.html">Pengalaman</a>
+        <a href="projects.html">Proyek</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+
+      <div style="font-size: 0.85rem; color: var(--text-muted);">
+        &copy; 2026 Wahyu Agus Riyanto. Didesain dengan HTML, CSS & JavaScript terpisah.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Popup -->
+  <div class="toast-msg" id="toastMsg">
+    <i class="fa-solid fa-circle-check" style="color: #10b981; font-size: 1.25rem;"></i>
+    <span class="toast-text">Tersalin ke clipboard!</span>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

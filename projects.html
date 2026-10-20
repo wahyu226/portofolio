@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Proyek Wahyu Agus Riyanto - Sistem IoT menggunakan Arduino Uno R3 dan ESP32 DevKit, Web Application, dan Deep Learning AI.">
+  <title>Portofolio Proyek | Wahyu Agus Riyanto</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS (Light Theme) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== GLOBAL NAVBAR ==================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-brand-logo">W</div>
+        <span>Wahyu<span style="color: var(--primary-blue);">.dev</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">Tentang Saya</a></li>
+          <li><a href="experience.html" class="nav-link">Pengalaman</a></li>
+          <li><a href="projects.html" class="nav-link active">Proyek</a></li>
+          <li><a href="contact.html" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="nav-mobile-menu" id="navMobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">Tentang Saya</a>
+      <a href="experience.html">Pengalaman Kerja</a>
+      <a href="projects.html">Portofolio Proyek</a>
+      <a href="contact.html">Kontak</a>
+      <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top: 0.5rem; text-align: center;">
+        <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <div class="page-badge"><i class="fa-solid fa-laptop-code"></i> Galeri Hasil Karya</div>
+        <h1 class="page-title">Portofolio Proyek <span>Web, IoT & AI</span></h1>
+        <p class="page-subtitle">
+          Kombinasi implementasi perangkat keras mikrokontroler (<strong>Arduino Uno R3</strong> & <strong>ESP32 DevKit</strong>), sistem web dinamis, dan model machine learning.
+        </p>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section>
+      <div class="container">
+        
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="tab-btn active" data-filter="all">Semua Proyek (6)</button>
+          <button class="tab-btn" data-filter="iot">IoT & Hardware (2)</button>
+          <button class="tab-btn" data-filter="web">Web Application (3)</button>
+          <button class="tab-btn" data-filter="ai">Deep Learning / AI (1)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- 1. ESP32 Kebakaran -->
+          <div class="card project-card" data-category="iot">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" 
+                   alt="ESP32 IoT Fire Detection Circuit" 
+                   class="project-img"
+                   onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80';">
+              <div class="project-badge-overlay">
+                <span class="badge-tag tag-iot">IoT Hardware</span>
+                <span class="badge-tag" style="background: rgba(15, 23, 42, 0.85); color: #fff;">Proyek Individu</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-hardware-badge"><i class="fa-solid fa-microchip"></i> ESP32 DevKit V1 + Blynk App</div>
+              <h3 class="project-title">Sistem IoT Deteksi Dini Kebakaran & Kebocoran Gas Otomatis</h3>
+              
+              <div class="project-meta-box">
+                <div class="meta-label"><i class="fa-solid fa-triangle-exclamation"></i> Latar Belakang & Masalah</div>
+                <div class="meta-text">
+                  Keterlambatan mendeteksi kebocoran gas LPG dan percikan api saat rumah ditinggal kosong dapat memicu kerugian material yang masif dan korban jiwa.
+                </div>
+              </div>
+
+              <div class="project-meta-box">
+                <div class="meta-label"><i class="fa-solid fa-user-gear"></i> Peran Saya</div>
+                <div class="meta-text">
+                  IoT Hardware & Firmware Developer — Merakit sirkuit sensor gas MQ-2 & Flame Sensor pada ESP32 DevKit, memprogram logika pembacaan ambang batas gas/api (C++), serta mengonfigurasi push-notification darurat Blynk.
+                </div>
+              </div>
+
+              <div class="project-impact-box">
+                <div class="meta-label"><i class="fa-solid fa-bolt"></i> Fitur Utama & Dampak</div>
+                <div class="meta-text">
+                  Monitoring kadar asap/gas real-time, alarm buzzer darurat di lokasi, serta notifikasi push instan ke smartphone via Blynk dalam waktu < 2 detik tanpa batas jarak.
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-chip">ESP32 DevKit V1</span>
+                <span class="tech-chip">Blynk IoT</span>
+                <span class="tech-chip">MQ-2 Gas Sensor</span>
+                <span class="tech-chip">Flame Sensor</span>
+                <span class="tech-chip">C++ / Arduino IDE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Arduino Jemuran & Gempa -->
+          <div class="card project-card" data-category="iot">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1553406830-ef2513450d76?auto=format&fit=crop&w=800&q=80" 
+                   alt="Arduino Uno R3 Smart Clothesline and Earthquake Project" 
+                   class="project-img"
+                   onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=800&q=80';">
+              <div class="project-badge-overlay">
+                <span class="badge-tag tag-iot">IoT & Otomasi</span>
+                <span class="badge-tag" style="background: rgba(15, 23, 42, 0.85); color: #fff;">Proyek Individu</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-hardware-badge"><i class="fa-solid fa-microchip"></i> Arduino Uno R3 + Servo + SW-420</div>
+              <h3 class="project-title">Sistem Jemuran Otomatis & Pendeteksi Dini Gempa Bumi</h3>
+              
+              <div class="project-meta-box">
+                <div class="meta-label"><i class="fa-solid fa-triangle-exclamation"></i> Latar Belakang & Masalah</div>
+                <div class="meta-text">
+                  Kerepotan mengangkat pakaian jemuran saat hujan mendadak dan kerentanan terhadap guncangan gempa bumi yang membutuhkan sinyal peringatan dini evakuasi.
+                </div>
+              </div>
+
+              <div class="project-meta-box">
+                <div class="meta-label"><i class="fa-solid fa-user-gear"></i> Peran Saya</div>
+                <div class="meta-text">
+                  Hardware & Logic Developer — Mengintegrasikan Arduino Uno R3 dengan Raindrop sensor, LDR, sensor getaran SW-420, mengendalikan motor servo penarik atap, dan menampilkan status pada LCD 16x2.
+                </div>
+              </div>
+
+              <div class="project-impact-box">
+                <div class="meta-label"><i class="fa-solid fa-bolt"></i> Fitur Utama & Dampak</div>
+                <div class="meta-text">
+                  Kanopi jemuran menutup otomatis saat sensor mendeteksi tetesan air hujan atau cuaca gelap, dan sirine gempa otomatis aktif saat terdeteksi getaran anomali.
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-chip">Arduino Uno R3</span>
+                <span class="tech-chip">Motor Servo</span>
+                <span class="tech-chip">Raindrop Sensor</span>
+                <span class="tech-chip">LDR Sensor</span>
+                <span class="tech-chip">SW-420 Vibration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Digilib Web App -->
+          <div class="card project-card" data-category="web">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" 
+                   alt="Library Web Application System" 
+                   class="project-img"
+                   onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80';">
+              <div class="project-badge-overlay">
+                <span class="badge-tag tag-web">Web App</span>
+                <span class="badge-tag" style="background: rgba(15, 23, 42, 0.85); color: #fff;">Proyek Kelompok</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-hardware-badge" style="background: #eff6ff; color: #1d4ed8;"><i class="fa-solid fa-server"></i> Web System (PHP & MySQL)</div>
+              <h3 class="project-title">Aplikasi Digitalisasi Perpustakaan (Digilib)</h3>
+              
+              <div class="project-meta-box">
+                <div class="meta-label"><i class="fa-solid fa-triangle-exclamation"></i> Latar Belakang & Masalah</div>
+                <div class="meta-text">
+                  Pencatatan sirkulasi buku manual di perpustakaan sering memicu kekeliruan data stok, antrean peminjaman lama, dan denda terlambat yang tidak terlacak akurat.
+                </div>
+              </div>
+
+              <div class="project-meta-box">
+                <div class="meta-label"><i class="fa-solid fa-user-gear"></i> Peran Saya</div>
+                <div class="meta-text">
+                  Fullstack Developer — Merancang arsitektur database MySQL, modul autentikasi user, integrasi katalog pencarian buku cepat, serta alur kalkulasi denda otomatis.
+                </div>
+              </div>
+
+              <div class="project-impact-box">
+                <div class="meta-label"><i class="fa-solid fa-bolt"></i> Fitur Utama & Dampak</div>
+                <div class="meta-text">
+                  Manajemen katalog terpusat, status sirkulasi buku real-time, dan kalkulasi denda otomatis. Menghemat waktu administrasi sirkulasi buku hingga 60%.
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-chip">PHP</span>
+                <span class="tech-chip">MySQL Database</span>
+                <span class="tech-chip">JavaScript</span>
+                <span class="tech-chip">HTML5 / CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Rental Barang Web App -->
+          <div class="card project-card" data-category="web">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
+                   alt="Rental Barang Web Dashboard" 
+                   class="project-img"
+                   onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80';">
+              <div class="project-badge-overlay">
+                <span class="badge-tag tag-web">Web App</span>
+                <span class="badge-tag" style="background: rgba(15, 23, 42, 0.85); color: #fff;">Proyek Individu</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-hardware-badge" style="background: #eff6ff; color: #1d4ed8;"><i class="fa-solid fa-server"></i> Web System (PHP & MySQL)</div>
+              <h3 class="project-title">Aplikasi Penyewaan Barang Berbasis Web</h3>
+              
+              <div class="project-meta-box">
+                <div class="meta-label"><i class="fa-solid fa-triangle-exclamation"></i> Latar Belakang & Masalah</div>
+                <div class="meta-text">
+                  Bisnis penyewaan barang sering terkendala jadwal sewa tumpang tindih (*double-booking*) dan pembuatan laporan rekap bulanan yang memakan waktu.
+                </div>
+              </div>
+
+              <div class="project-meta-box">
+                <div class="meta-label"><i class="fa-solid fa-user-gear"></i> Peran Saya</div>
+                <div class="meta-text">
+                  Sole Developer — Membangun sistem end-to-end dari skema basis data relasional, logika booking sewa dengan validasi tanggal, serta antarmuka visual responsif.
+                </div>
+              </div>
+
+              <div class="project-impact-box">
+                <div class="meta-label"><i class="fa-solid fa-bolt"></i> Fitur Utama & Dampak</div>
+                <div class="meta-text">
+                  Monitoring ketersediaan barang real-time, kalkulasi biaya durasi sewa otomatis, serta laporan transaksi instan yang mengeliminasi risiko bentrok jadwal sewa.
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-chip">PHP</span>
+                <span class="tech-chip">MySQL</span>
+                <span class="tech-chip">JavaScript</span>
+                <span class="tech-chip">Bootstrap UI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Manajemen Proyek Multi-Role -->
+          <div class="card project-card" data-category="web">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" 
+                   alt="Project Management Multi-Role Application" 
+                   class="project-img"
+                   onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80';">
+              <div class="project-badge-overlay">
+                <span class="badge-tag tag-web">Web App</span>
+                <span class="badge-tag" style="background: rgba(15, 23, 42, 0.85); color: #fff;">Proyek Individu</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-hardware-badge" style="background: #eff6ff; color: #1d4ed8;"><i class="fa-brands fa-python"></i> Python & SQL Backend</div>
+              <h3 class="project-title">Aplikasi Manajemen Proyek (Multi-Role System)</h3>
+              
+              <div class="project-meta-box">
+                <div class="meta-label"><i class="fa-solid fa-triangle-exclamation"></i> Latar Belakang & Masalah</div>
+                <div class="meta-text">
+                  Miskomunikasi perizinan data antar divisi dan lambatnya koordinasi pengadaan barang logistik gudang untuk proyek lapangan.
+                </div>
+              </div>
+
+              <div class="project-meta-box">
+                <div class="meta-label"><i class="fa-solid fa-user-gear"></i> Peran Saya</div>
+                <div class="meta-text">
+                  Sole Developer — Mengembangkan sistem backend Python dengan arsitektur otorisasi Role-Based Access Control (Admin, Manajer, Gudang) dan manajemen alur kerja.
+                </div>
+              </div>
+
+              <div class="project-impact-box">
+                <div class="meta-label"><i class="fa-solid fa-bolt"></i> Fitur Utama & Dampak</div>
+                <div class="meta-text">
+                  Isolasi hak akses multi-role yang aman, tracking milestone progres tugas, serta alur pengeluaran inventaris gudang yang transparan.
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Flask/Django</span>
+                <span class="tech-chip">SQL Database</span>
+                <span class="tech-chip">JavaScript / CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. CNN Image Classification -->
+          <div class="card project-card" data-category="ai">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" 
+                   alt="Convolutional Neural Network Deep Learning" 
+                   class="project-img"
+                   onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80';">
+              <div class="project-badge-overlay">
+                <span class="badge-tag tag-ai">Deep Learning</span>
+                <span class="badge-tag" style="background: rgba(15, 23, 42, 0.85); color: #fff;">Proyek Individu</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-hardware-badge" style="background: #fdf4ff; color: #9333ea;"><i class="fa-solid fa-brain"></i> TensorFlow & Keras AI</div>
+              <h3 class="project-title">Klasifikasi Citra Berbasis Convolutional Neural Network</h3>
+              
+              <div class="project-meta-box">
+                <div class="meta-label"><i class="fa-solid fa-triangle-exclamation"></i> Latar Belakang & Masalah</div>
+                <div class="meta-text">
+                  Proses sortir dan klasifikasi citra secara manual rentan terhadap kelelahan mata, inkonsistensi penilaian, dan memakan waktu operasional yang besar.
+                </div>
+              </div>
+
+              <div class="project-meta-box">
+                <div class="meta-label"><i class="fa-solid fa-user-gear"></i> Peran Saya</div>
+                <div class="meta-text">
+                  Machine Learning & Web Developer — Menyiapkan dataset (augmentasi citra, normalisasi), melatih arsitektur Convolutional Neural Network, dan mengintegrasikannya ke web interface.
+                </div>
+              </div>
+
+              <div class="project-impact-box">
+                <div class="meta-label"><i class="fa-solid fa-bolt"></i> Fitur Utama & Dampak</div>
+                <div class="meta-text">
+                  Prediksi kelas citra otomatis dan skor probabilitas dalam waktu < 1 detik setelah upload, mengotomasi identifikasi visual berakurasi tinggi.
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">TensorFlow / Keras</span>
+                <span class="tech-chip">CNN Architecture</span>
+                <span class="tech-chip">OpenCV</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Section CTA -->
+        <div style="text-align: center; margin-top: 4rem;">
+          <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--text-heading); margin-bottom: 0.75rem;">Tertarik Mendiskusikan Proyek Ini Lebih Lanjut?</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Saya siap mempresentasikan demo teknis, kode sumber, atau arsitektur sistem kepada Anda.</p>
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fa-solid fa-comments"></i> Hubungi Saya untuk Diskusi Teknis
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h4>Wahyu Agus Riyanto</h4>
+        <p>Mahasiswa Teknik Informatika UMC | Web Developer & IoT Hardware Enthusiast</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang</a>
+        <a href="experience.html">Pengalaman</a>
+        <a href="projects.html">Proyek</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+
+      <div style="font-size: 0.85rem; color: var(--text-muted);">
+        &copy; 2026 Wahyu Agus Riyanto. Didesain dengan HTML, CSS & JavaScript terpisah.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Popup -->
+  <div class="toast-msg" id="toastMsg">
+    <i class="fa-solid fa-circle-check" style="color: #10b981; font-size: 1.25rem;"></i>
+    <span class="toast-text">Tersalin ke clipboard!</span>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+
